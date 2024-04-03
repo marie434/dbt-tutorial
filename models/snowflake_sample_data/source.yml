@@ -23,6 +23,7 @@ sources:
       - name: dbgen_version
       - name: household_demographics
       - name: item
+      - name: promotion
       - name: store
       - name: store_returns
       - name: store_sales

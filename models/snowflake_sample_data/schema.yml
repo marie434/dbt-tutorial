@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: query1
+    columns:
+      - name: SR_CUSTOMER_SK
+        tests:
+          - unique
+          - not_null
+
+  - name: query3
+    columns:
+      - name: I_BRAND
+        tests:
+          - unique
+          - not_null
+
+  - name: query4
+    columns:
+      - name: C_CUSTOMER_SK
+        tests:
+          - not_null
+
+  - name: query10
+    columns:
+      - name: customer_count
+        tests:
+          - not_null
