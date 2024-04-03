@@ -1,0 +1,29 @@
+version: 2
+
+sources:
+  - name: tpcds
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: tpcds_sf10Tcl
+    loader: Snowflake
+    
+    quoting:
+      database: false
+      schema: false
+      identifier: false
+      
+    tables:
+      - name: call_center
+      - name: catalog_page
+      - name: catalog_returns
+      - name: catalog_sales
+      - name: customer
+      - name: customer_address
+      - name: customer_demographics
+      - name: date_dim
+      - name: dbgen_version
+      - name: household_demographics
+      - name: item
+      - name: store
+      - name: store_returns
+      - name: store_sales
+      - name: warehouse
