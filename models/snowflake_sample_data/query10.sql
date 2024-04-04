@@ -1,4 +1,7 @@
 -- QUERY 10
+-- Count the customers with the same gender, marital status, education status, purchase estimate, credit rating,
+-- dependent count, employed dependent count and college dependent count who live in certain counties and who
+-- have purchased from both stores and another sales channel during a three month time period of a given year. 
 
 WITH tab1 AS (
     SELECT
@@ -61,5 +64,5 @@ ORDER BY
     CD_DEP_EMPLOYED_COUNT,
     CD_DEP_COLLEGE_COUNT,
     COUNT(*) desc
-    
+
 --LIMIT 10

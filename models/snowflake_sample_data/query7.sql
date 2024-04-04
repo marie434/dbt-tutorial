@@ -1,3 +1,7 @@
+-- QUERY 7
+-- Compute the average quantity, list price, discount, and sales price for promotional items sold in stores where the
+-- promotion is not offered by mail or a special event. Restrict the results to a specific gender, marital and
+-- educational status
 
 WITH SALES AS (
     SELECT
@@ -13,7 +17,7 @@ WITH SALES AS (
     JOIN {{ source('tpcds', 'date_dim') }} d ON ss.SS_SOLD_DATE_SK = d.d_date_sk    
     WHERE
         p.P_CHANNEL_DMAIL != 'Y' 
-        AND p.P_CHANNEL_DEMO != 'Y' 
+        AND p.P_CHANNEL_EVENT != 'Y' 
         AND d.d_year = 2000 
         AND cd.CD_EDUCATION_STATUS = 'College' 
         AND cd.CD_MARITAL_STATUS = 'S' 
