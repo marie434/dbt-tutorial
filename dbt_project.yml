@@ -35,5 +35,5 @@ models:
     ex1:
       +materialized: view
     snowflake_sample_data:
-      +materialized: ephemeral
+      +materialized: view
       

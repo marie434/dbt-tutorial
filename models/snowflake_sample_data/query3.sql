@@ -18,4 +18,5 @@ SELECT
 FROM tab1
 GROUP BY I_BRAND
 ORDER BY total_ext_sales_price
-limit 10
+
+--LIMIT 10

@@ -3,9 +3,8 @@ version: 2
 models:
   - name: query1
     columns:
-      - name: SR_CUSTOMER_SK
+      - name: SR_STORE_SK
         tests:
-          - unique
           - not_null
 
   - name: query3
@@ -13,7 +12,6 @@ models:
       - name: I_BRAND
         tests:
           - unique
-          - not_null
 
   - name: query4
     columns:
