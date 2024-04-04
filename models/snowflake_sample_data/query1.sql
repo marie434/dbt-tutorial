@@ -1,3 +1,5 @@
+-- QUERY 1
+-- Find customers who have returned items more than 20% more often than the average customer returns for a store in a given state for a given year.
 
 WITH store_avg_returns AS (
     SELECT
@@ -41,5 +43,5 @@ JOIN
     store_avg_returns sar ON crt.SR_STORE_SK  = sar.SR_STORE_SK 
 WHERE
     (crt.customer_total_return_amount - sar.store_avg_return_amount) / sar.store_avg_return_amount > 0.2
-    
+
 --LIMIT 10
