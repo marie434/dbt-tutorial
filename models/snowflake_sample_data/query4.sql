@@ -46,4 +46,5 @@ LEFT JOIN
     store ss ON cc.C_CUSTOMER_SK = ss.C_CUSTOMER_SK
 WHERE
     cs.total_catalog_spending > ss.total_store_spending
-LIMIT 5
+    
+--LIMIT 5

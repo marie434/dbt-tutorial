@@ -41,4 +41,5 @@ JOIN
     store_avg_returns sar ON crt.SR_STORE_SK  = sar.SR_STORE_SK 
 WHERE
     (crt.customer_total_return_amount - sar.store_avg_return_amount) / sar.store_avg_return_amount > 0.2
-LIMIT 10
+    
+--LIMIT 10
